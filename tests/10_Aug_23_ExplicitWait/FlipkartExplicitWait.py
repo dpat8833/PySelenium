@@ -13,3 +13,4 @@ def test_flipkart():
     close_popup_btn = WebDriverWait(driver, 10).until((EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'✕')]"))))
     close_popup_btn.click()
     driver.implicitly_wait(5)
+    driver.quit()
